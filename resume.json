@@ -1,0 +1,87 @@
+{
+  "basics": {
+    "name": "Harsh Panchal",
+    "label": "UI/UX Designer & Frontend Developer",
+    "email": "panchalharsh0508@gmail.com",
+    "github": "https://github.com/HarshPanchal05",
+    "linkedin": "",
+    "website": "https://harshpanchal05.github.io/"
+  },
+  "summary": "UI/UX designer and frontend developer focused on thoughtful interfaces, automation tools and AI-assisted workflows.",
+  "education": [
+    {
+      "degree": "B.Tech Computer Science Engineering",
+      "institution": "",
+      "startDate": "",
+      "endDate": "",
+      "description": ""
+    }
+  ],
+  "skills": {
+    "languages": [
+      "Python",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "frontend": [
+      "React"
+    ],
+    "design": [
+      "Figma",
+      "Canva",
+      "Affinity Designer"
+    ],
+    "tools": [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Docker"
+    ],
+    "aiAutomation": [
+      "ChatGPT",
+      "Claude",
+      "Gemini",
+      "Cursor",
+      "n8n",
+      "AI Agents"
+    ]
+  },
+  "projects": [
+    {
+      "name": "Catalogue Generator",
+      "category": "Automation \u00b7 Python \u00b7 Productivity",
+      "url": "https://github.com/HarshPanchal05/Catalogue-generator",
+      "description": "A Python-powered workflow for turning structured product data and image assets into polished, repeatable catalogue outputs."
+    },
+    {
+      "name": "Design System Generator",
+      "category": "Design Systems \u00b7 Frontend \u00b7 Tooling",
+      "url": "https://github.com/HarshPanchal05",
+      "description": "A design-focused tool concept for creating reusable UI foundations and helping product teams structure visual systems consistently."
+    },
+    {
+      "name": "Perspective Mockup Generator",
+      "category": "Design Tool \u00b7 React \u00b7 Canvas",
+      "url": "https://github.com/HarshPanchal05",
+      "description": "An interface experiment for transforming flat design assets into perspective-based visual mockups."
+    },
+    {
+      "name": "UI Heatmap Inspector",
+      "category": "UI/UX \u00b7 Analysis \u00b7 Developer Tool",
+      "url": "https://github.com/HarshPanchal05",
+      "description": "An experimental interface-analysis concept for reviewing attention patterns and interaction density across digital layouts."
+    }
+  ],
+  "experience": [],
+  "certifications": [],
+  "achievements": [],
+  "interests": [
+    "AI Agents",
+    "Advanced Python",
+    "React Ecosystem",
+    "Cloud Deployment",
+    "Large Language Models",
+    "Advanced UI/UX"
+  ]
+}
