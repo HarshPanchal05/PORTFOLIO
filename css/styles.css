@@ -455,15 +455,22 @@ main,
   position: relative;
   flex: 0 0 var(--closed);
   overflow: hidden;
-  border: 2px solid rgba(255, 255, 255, .9);
+  border: 2px solid var(--acc-fg);
   border-radius: 24px;
-  background: #0a0a0a;
-  color: #fff;
+  background: var(--acc-bg);
+  color: var(--acc-fg);
   outline-offset: 4px;
   transition:
     flex-basis .7s cubic-bezier(.22, 1, .36, 1),
     border-color .7s cubic-bezier(.22, 1, .36, 1);
 }
+
+/* Blue palette: #021024 #052659 #5483B3 #7DA0CA #C1E8FF (one per panel) */
+.acc-panel:nth-child(5n + 1) { --acc-bg: #021024; --acc-fg: #C1E8FF; --acc-vbg: #C1E8FF; --acc-vfg: #021024; }
+.acc-panel:nth-child(5n + 2) { --acc-bg: #052659; --acc-fg: #C1E8FF; --acc-vbg: #7DA0CA; --acc-vfg: #021024; }
+.acc-panel:nth-child(5n + 3) { --acc-bg: #5483B3; --acc-fg: #021024; --acc-vbg: #C1E8FF; --acc-vfg: #052659; }
+.acc-panel:nth-child(5n + 4) { --acc-bg: #7DA0CA; --acc-fg: #021024; --acc-vbg: #052659; --acc-vfg: #C1E8FF; }
+.acc-panel:nth-child(5n + 5) { --acc-bg: #C1E8FF; --acc-fg: #021024; --acc-vbg: #5483B3; --acc-vfg: #021024; }
 
 .acc-panel:focus-visible {
   outline: 2px solid var(--text);
@@ -471,7 +478,7 @@ main,
 
 .acc-panel.is-open {
   flex-basis: calc(100% - 3 * var(--closed) - 3 * var(--gap));
-  border: 1px solid rgba(255, 255, 255, .1);
+  border: 1px solid color-mix(in srgb, var(--acc-fg) 15%, transparent);
 }
 
 .acc-label {
@@ -517,8 +524,9 @@ main,
   min-height: 0;
   overflow: hidden;
   border-radius: 14px;
-  background: var(--surface);
-  color: var(--text);
+  background: var(--acc-vbg);
+  --text: var(--acc-vfg);
+  color: var(--acc-vfg);
 }
 
 .acc-body {
@@ -530,7 +538,7 @@ main,
   font: 12px/1.3 ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
   text-transform: uppercase;
   letter-spacing: .08em;
-  color: rgba(255, 255, 255, .4);
+  color: color-mix(in srgb, var(--acc-fg) 60%, transparent);
 }
 
 .acc-body h3 {
@@ -543,7 +551,7 @@ main,
   margin: 0 0 20px;
   max-width: 480px;
   font-size: 16px;
-  color: rgba(255, 255, 255, .55);
+  color: color-mix(in srgb, var(--acc-fg) 75%, transparent);
 }
 
 .acc-tags {
@@ -555,9 +563,9 @@ main,
 
 .acc-tags span {
   padding: 10px 16px;
-  border: 1px solid rgba(255, 255, 255, .12);
+  border: 1px solid color-mix(in srgb, var(--acc-fg) 25%, transparent);
   border-radius: 999px;
-  background: #151513;
+  background: color-mix(in srgb, var(--acc-fg) 10%, transparent);
   font: 13px/1 ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
   letter-spacing: .04em;
 }
@@ -568,8 +576,8 @@ main,
   width: 56px;
   height: 36px;
   border-radius: 999px;
-  background: #fff;
-  color: #0a0a0a;
+  background: var(--acc-fg);
+  color: var(--acc-bg);
   font-size: 20px;
   line-height: 1;
 }
@@ -866,7 +874,7 @@ main,
   .acc-panel,
   .acc-panel.is-open {
     flex: none;
-    border: 1px solid rgba(255, 255, 255, .1);
+    border: 1px solid color-mix(in srgb, var(--acc-fg) 15%, transparent);
   }
 
   .acc-label {
