@@ -1,6 +1,7 @@
 import { initCursorGrid } from './cursor-grid.js';
 import { initEyes } from './eyes.js';
 import { initAccordion } from './accordion.js';
+import { initCarousel } from './carousel.js';
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -24,3 +25,4 @@ if (!reduceMotion) {
 
 initEyes();
 initAccordion(document.querySelector('[data-accordion]'));
+initCarousel(document.querySelector('[data-coverflow]'));
